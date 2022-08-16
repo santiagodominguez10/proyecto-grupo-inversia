@@ -1,0 +1,74 @@
+body {
+    margin:0em ;
+      }
+
+.cover{
+    height: 400px;
+    background-image:url(./imagenes/dron\ inicio.jpeg);
+    color: rgb(237, 230, 230);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(199, 195, 195);
+    background-blend-mode: darken;
+}
+.card{
+    border: 2px;
+    box-shadow:0 4px 6px - 1px rgb(158, 155, 155), 0 2px 4px - 1px rgb(139, 139, 139);
+}
+.product-stripe, .slider{
+    overflow-x: scroll;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.stripe-container, .slider-container{
+    display: flex;
+}
+
+ .slider{
+    overflow-x: hidden;
+ }
+
+  .slider-container{
+    transform: translateX(0);
+    animation: slider 10s infinite;
+  }
+ .image-container{
+    width: 100%;
+    padding: top 56.25%; ;
+    background-size:cover ;
+    background-position:center ;
+    flex-shrink:0;
+ }
+
+ @keyframes slider{
+    0%{
+        transform:translatex(0);
+    }
+    20%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+     45%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    70%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-300%);
+    }
+    95%{
+        transform: translateX(-300%);
+    }
+
+    100%{transform:translatex(0)
+      
+    }
+ }
+
+
